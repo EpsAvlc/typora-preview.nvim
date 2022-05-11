@@ -1,11 +1,11 @@
 if has('linux')
 
-  function! typora#launch()
+  function! typora-preview#launch()
       " Launch Typora
       call system("typora"" . expand("%") . "\"")
       setlocal autoread
   endfunction
 
-  command! TyporaPreview call typora#launch()
+  command! TyporaPreview call typora-preview#launch()
 
 endif
