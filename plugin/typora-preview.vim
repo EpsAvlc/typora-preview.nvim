@@ -6,6 +6,6 @@ if has('linux')
       setlocal autoread
   endfunction
 
-  command! TyporaPreview call typora_preview#launch()
+  command! TyporaPreview call s:typora_preview#launch()
 
 endif
